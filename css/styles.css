@@ -62,41 +62,91 @@ hr {
 }
 
 /* animation */
-.top-container h2 {
+.title {
+  overflow: hidden; 
+ }
+
+.text {
+  /* display: inline-block;  */
+  float: left;
+
+}
+
+.text-software {
   position: absolute;
-  overflow: hidden;
+  animation: mid-to-bottom-part1 2s ease 5s 1 forwards;
+} 
+
+.text-web {
+  position: absolute;
+  top: -800px;
+  animation: top-to-mid-part1 6s ease 2s 1 forwards;
 }
 
-.h2-developer {  
-  background: #d94e4e;
-  left:-100%;
-  -webkit-animation: left-to-right 5s linear forwards;
-  animation: left-to-right 5s linear forwards;
+.text-engineer {
+  position: absolute;
+  left: 185px;
+  animation: mid-to-bottom-part2 4s ease 2s 1 forwards;
+} 
+
+.text-developer {
+  position: absolute;
+  top: -150px;
+  left: 185px;
+  animation: top-to-mid-part2 6s ease 2s 1 forwards;
 }
 
-.h2-engineer {  
-  background: #60b044;
-  left:0;
-  -webkit-animation: left-to-right 5s linear forwards;
-  animation: left-to-right 5s linear forwards;
+@keyframes mid-to-bottom-part1 {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 100%;
+  }
+
+  to {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes left-to-right{
-  from{left:-100%}
-  to{left:0}
-}
-@-webkit-keyframes right-to-left{
-  from{left:0}
-  to{left:100%}
+@keyframes top-to-mid-part1 {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 800px, 0);
+    opacity: 100%;
+  }
 }
 
-@keyframes left-to-right{
-  from{left:-100%}
-  to{left:0}
+@keyframes mid-to-bottom-part2 {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 100%;
+  }
+
+  to {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
 }
-@keyframes right-to-left{
-  from{left:0}
-  to{left:100%}
+
+@keyframes top-to-mid-part2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translate3d(0, 150px, 0);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate3d(-90px, 150px, 0);
+    opacity: 100%;
+  }
 }
 
 /************ Middle container ***************/
