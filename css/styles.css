@@ -42,7 +42,7 @@ hr {
 .top-container {
   background-color: #eaf6f6;
   padding-top: 150px;
-  position: relative;
+  position: relative;  
 }
 
 .top-cloud {
@@ -52,49 +52,44 @@ hr {
 }
 
 .bottom-cloud {
-  bottom: 360px;
+  bottom: 300px;
   left: 250px;
   position: absolute;
 }
 
 .img-mountain {
-  padding-top: 100px;
+  padding-top: 170px;
 }
 
 /* animation */
 .t1-software {
   position: absolute;
   margin-left: -190px;
-  animation: move-t1 3s ease 1 forwards;
+  animation: move-t1 5s ease 1 forwards;
 }
 .t1-engineer {
   position: absolute;
-  animation: move-t1 3s ease 1 forwards;
+  animation: move-t1 5s ease 1 forwards;
 }
 
 .t2-web {
   position: absolute;
   margin-left: -110px;
-  animation: show-t2 3s ease 1 forwards;
+  animation: show-t2 5s ease 1 forwards;
 }
 .t2-developer {
   position: absolute;
-  animation: show-t2 3s ease 1 forwards;
+  animation: show-t2 5s ease 1 forwards;
 }
 
 .t3-problem {
   position: absolute;
   margin-left: -185px;
-  animation: show-t3 3s ease 1 forwards;
+  animation: show-t3 5s ease 1 forwards;
 }
 .t3-solver {
   position: absolute;
-  animation: show-t3 3s ease 1 forwards;
-}
-
-@keyframes show-t2 {
-  from {transform: translate3d(0, 0, 0); opacity:0;}
-  to {transform: translate3d(0, 0, 0); opacity:100%;}
+  animation: show-t3 5s ease 1 forwards;
 }
 
 @keyframes move-t1 {
@@ -103,9 +98,15 @@ hr {
   100% {transform: translate3d(0, -60px, 0); opacity:100%;}
 }
 
+@keyframes show-t2 {
+  0% {transform: translate3d(0, 0, 0); opacity:0;}
+  50% {transform: translate3d(-100px, 20px, 0); opacity:50%;}
+  100% {transform: translate3d(-45px, 20px, 0); opacity:100%;}
+}
+
 @keyframes show-t3 {
   0% {transform: translate3d(0, 0, 0); opacity:0;}
-  100% {transform: translate3d(0, 60px, 0); opacity:100%;}
+  100% {transform: translate3d(35px, 100px, 0); opacity:100%;}
 }
 
 /************ Middle container ***************/
@@ -116,11 +117,12 @@ hr {
 
 /* Profile Section */
 .profile {
-  display: inline-block;
+  display: inline-block;  
 }
 
 .profile p {
   line-height: 4;
+  font-size: larger;
 }
 
 .profile-img {
