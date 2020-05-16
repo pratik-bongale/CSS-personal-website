@@ -2,9 +2,9 @@
 /************ HTML Elements ***************/
 body {
   color: #40514E;
-  /* font-family: verdana, sans-serif; */
-  /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
   font-family: 'Merriweather', serif;
+  /* font-size: 2em; */
+  color: grey;
   margin: 0;
   text-align: center;
 }
@@ -12,8 +12,7 @@ body {
 h1 {
   color: #66bfbf;
   font-family: 'Sacramento', cursive;
-  font-size: 5.6rem;
-  /* margin: 20px auto 0 auto; */
+  font-size: 5.6rem;  
 }
 
 h2 {
@@ -35,76 +34,120 @@ p {
 hr {
   border: dotted #EAF6F6 8px;
   border-bottom: none;
-  margin: 100px auto;
   width: 4%;
-  /* display: inline; */
+  margin: 80px auto;
 }
 
 /************ Top container ***************/
 .top-container {
   background-color: #eaf6f6;
-  padding-top: 100px;
+  padding-top: 150px;
   position: relative;
-  /* height: 200px;
-  width: 200px;
-  border-width: 10px;
-  border-style: solid;
-  padding: 20px; */
-}
-
-.bottom-cloud {
-  bottom: 300px;
-  left: 250px;
-  position: absolute;
 }
 
 .top-cloud {
   position: absolute;
   right: 250px;
-  top: 50px;
+  top: 80px;
+}
+
+.bottom-cloud {
+  bottom: 360px;
+  left: 250px;
+  position: absolute;
+}
+
+.img-mountain {
+  padding-top: 100px;
+}
+
+/* animation */
+.top-container h2 {
+  position: absolute;
+  overflow: hidden;
+}
+
+.h2-developer {  
+  background: #d94e4e;
+  left:-100%;
+  -webkit-animation: left-to-right 5s linear forwards;
+  animation: left-to-right 5s linear forwards;
+}
+
+.h2-engineer {  
+  background: #60b044;
+  left:0;
+  -webkit-animation: left-to-right 5s linear forwards;
+  animation: left-to-right 5s linear forwards;
+}
+
+@-webkit-keyframes left-to-right{
+  from{left:-100%}
+  to{left:0}
+}
+@-webkit-keyframes right-to-left{
+  from{left:0}
+  to{left:100%}
+}
+
+@keyframes left-to-right{
+  from{left:-100%}
+  to{left:0}
+}
+@keyframes right-to-left{
+  from{left:0}
+  to{left:100%}
 }
 
 /************ Middle container ***************/
 .middle-container {
-  margin: 50px auto 50px auto;
+  padding-top: 150px;  
+  padding-bottom: 100px;
+}
+
+/* Profile Section */
+.profile {
+  display: inline-block;
+}
+
+.profile p {
+  line-height: 4;
 }
 
 .profile-img {
   border-radius: 50%;
-  height: 175px;
-  width: 175px;
+  height: 200px;
+  width: 200px;
 }
 
-.profile {
-  display: inline-block;
-  margin-bottom: 80px;
-  width: 25%;
-}
 
-.skills {
-  margin: 80px;
-}
-
+/* Skills Section */
 .skill-row {
   display: inline-block;
-  margin: 50px auto 50px auto;
+  margin: 25px auto 25px auto;
   text-align: left;
   width: 50%;
 }
 
-.code-img {
+.software-img {
   border-radius: 50%;
   float: left;
-  margin-right: 30px;
-  width: 25%;
+  margin: 30px;
+  height: 200px;
+  width: 200px;
 }
 
-.chilly-img {
+.code-img {
   border-radius: 50%;
   float: right;
-  margin-left: 30px;
-  width: 25%;
+  margin: 30px;
+  height: 200px;
+  width: 200px;
 }
+
+
+
+/* Contact Me Section */
 
 .contact-btn {
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
@@ -149,16 +192,6 @@ hr {
   clear: right;
 }
 
-.middle-container {
-  background-color: red;
-  height: 200px;
-  width: 200px;
-  border-width: 20px;
-  border-style: solid;
-  margin-left: 260px;
-}
-*/
-
 /************ Bottom container ***************/
 
 .bottom-container {
@@ -181,13 +214,4 @@ hr {
   margin-top: 20px;
 }
 
-/*
-.bottom-container {
-  background-color: yellow;
-  height: 200px;
-  width: 200px;
-  border-width: 10px;
-  border-style: solid;
-  margin-left: 500px;
-}
-*/
+
