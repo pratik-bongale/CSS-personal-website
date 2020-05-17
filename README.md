@@ -18,6 +18,7 @@ What is this?
 - This is a simple static website built only using HTML + CSS. 
 - While working on this website I learned and applied many fundamental concepts of CSS. The most important ones were positioning elements, understanding the box model and adding beautiful animations.
 - I had the most fun with animations. Dont forget to checkout the animation added to `Intro` section.
+- Additionally, I tried to keep everything at the center and short to ensure that the website looks good on small screens as well as large screens. But it is really difficult to build a *responsive* website using only css. 
 
 Resources:
 ----------
